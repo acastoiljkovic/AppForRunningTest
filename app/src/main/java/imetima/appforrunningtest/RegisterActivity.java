@@ -26,8 +26,14 @@ public class RegisterActivity extends AppCompatActivity {
 
         BackgroundWork bgWork = new BackgroundWork(this);
         bgWork.execute(type,username,password);
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         if(bgWork.res.equals("SuccessR")){
             Toast.makeText(this, "Register Success", Toast.LENGTH_SHORT).show();
+            //TODO: skok na pocetnu stranu aplikacije
         }
         else if(bgWork.res.equals("FailedR")){
             Toast.makeText(this, "Username is already taken, try another one.", Toast.LENGTH_SHORT).show();
