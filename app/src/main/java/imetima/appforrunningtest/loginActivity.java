@@ -47,6 +47,7 @@ public class loginActivity extends AppCompatActivity {
         else if(bgWork.res.equals("FailedL")){
             Intent intent = new Intent(this,RegisterActivity.class);
             startActivity(intent);
+            this.onBackPressed();
         }
         else {
             Toast.makeText(this, "Failed to connect to server !", Toast.LENGTH_SHORT).show();
