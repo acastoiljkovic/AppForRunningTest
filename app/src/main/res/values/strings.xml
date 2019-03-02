@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AppForRunningTest</string>
+    <string name="EditTextUsername">Username</string>
+    <string name="EditTextPassword">Password</string>
+    <string name="ButtonLogIn">LogIn</string>
+    <string name="ButtonRegister">Register</string>
+</resources>
