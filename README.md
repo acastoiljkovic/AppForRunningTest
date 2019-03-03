@@ -1,2 +1,3 @@
 # AppForRunningTest
-Sak maj bwc!!1
+
+By AMG Team
