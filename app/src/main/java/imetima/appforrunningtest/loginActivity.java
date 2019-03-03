@@ -43,6 +43,9 @@ public class loginActivity extends AppCompatActivity {
         if(bgWork.res.equals("SuccessL")){
             Toast.makeText(this, "Login Success", Toast.LENGTH_SHORT).show();
             //TODO: Sok na pocetnu starnu aplikacije
+            Intent intent = new Intent(this,AppActivity.class);
+            startActivity(intent);
+            this.onBackPressed();
         }
         else if(bgWork.res.equals("FailedL")){
             Intent intent = new Intent(this,RegisterActivity.class);

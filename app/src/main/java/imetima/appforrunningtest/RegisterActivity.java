@@ -1,5 +1,6 @@
 package imetima.appforrunningtest;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -34,6 +35,9 @@ public class RegisterActivity extends AppCompatActivity {
         if(bgWork.res.equals("SuccessR")){
             Toast.makeText(this, "Register Success", Toast.LENGTH_SHORT).show();
             //TODO: skok na pocetnu stranu aplikacije
+            Intent intent = new Intent(this,AppActivity.class);
+            startActivity(intent);
+            this.onBackPressed();
         }
         else if(bgWork.res.equals("FailedR")){
             Toast.makeText(this, "Username is already taken, try another one.", Toast.LENGTH_SHORT).show();
