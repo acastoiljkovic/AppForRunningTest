@@ -1,3 +1,0 @@
-# AppForRunningTest
-
-By AMG Team
